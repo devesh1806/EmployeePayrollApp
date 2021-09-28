@@ -2,9 +2,9 @@ package com.bridgelabz.employeepayrollapp.dto;
 
 public class EmployeeDTO {
 	private String name;
-	private Double salary;
+	private long salary;
 	
-	public EmployeeDTO(String name,Double salary) {
+	public EmployeeDTO(String name,long salary) {
 		this.name= name;
 		this.salary = salary;
 	}
@@ -14,10 +14,10 @@ public class EmployeeDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Double getSalary() {
+	public long getSalary() {
 		return salary;
 	}
-	public void setSalary(Double salary) {
+	public void setSalary(long salary) {
 		this.salary = salary;
 	}
 	

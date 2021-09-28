@@ -6,7 +6,7 @@ public class EmployeeData {
 	
 	private Integer emp_id;
 	private String name;
-	private Double salary;
+	private long salary;
 	
 	public EmployeeData(Integer emp_id,EmployeeDTO dataDTO) {
 		this.emp_id = emp_id;
@@ -25,10 +25,10 @@ public class EmployeeData {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Double getSalary() {
+	public long getSalary() {
 		return salary;
 	}
-	public void setSalary(Double salary) {
+	public void setSalary(long salary) {
 		this.salary = salary;
 	}
 	
