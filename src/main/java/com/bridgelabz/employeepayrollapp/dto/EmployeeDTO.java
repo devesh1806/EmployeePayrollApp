@@ -1,5 +1,6 @@
 package com.bridgelabz.employeepayrollapp.dto;
 
+
 public class EmployeeDTO {
 	private String name;
 	private long salary;
