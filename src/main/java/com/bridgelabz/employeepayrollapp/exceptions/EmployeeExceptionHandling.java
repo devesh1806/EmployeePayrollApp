@@ -25,4 +25,10 @@ public class EmployeeExceptionHandling {
 		return new ResponseEntity<ResponseDTO>(responseDTO,HttpStatus.BAD_REQUEST);
 	}
 	
+	@ExceptionHandler(EmployeeException.class)
+	public ResponseEntity<ResponseDTO> handleEmployeeException(EmployeeException exception){
+		ResponseDTO responseDTO=new ResponseDTO("Exception while processing REST request",exception.getMessage());
+		return new ResponseEntity<ResponseDTO>(responseDTO,HttpStatus.BAD_REQUEST);
+	}
+	
 }
